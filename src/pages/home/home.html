@@ -1,14 +1,191 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+    <ion-navbar>
+      <ion-title>
+        Quiz Game
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+  
+    
+  
+    <h1>THIS IS MY QUIZZ</h1>
+  
+    <ion-item>
+      <ion-label floating>Game Number</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+  
+   
+  
+    <h1 id="h101">Category</h1>
+  
+    <p> 1. Which British TV presenter was known for his "Cheap as chips" catchphrase?</p>
+    
+    <ion-item>
+      <ion-label>Ronaldo</ion-label>
+      <ion-checkbox [(ngModel)]="Lufuno1"></ion-checkbox>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Messi</ion-label>
+      <ion-checkbox [(ngModel)]="Lufuno2"></ion-checkbox>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Suarez</ion-label>
+      <ion-checkbox [(ngModel)]="Lufuno3"></ion-checkbox>
+    </ion-item>
+  
+    <p> 2. Which British TV presenter was known for his "Cheap as chips" catchphrase?</p>
+  
+    <ion-item>
+      <ion-label>The Princess Bride</ion-label>
+      <ion-checkbox [(ngModel)]="Nemza1"></ion-checkbox>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Dianah</ion-label>
+      <ion-checkbox [(ngModel)]="Nemza2"></ion-checkbox>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Robert</ion-label>
+      <ion-checkbox [(ngModel)]="Nemza3"></ion-checkbox>
+    </ion-item>
+    
+    <p>3.In 16th century Arabic it was known as 'qahwa', the Turkish called it 'kahveh' - what is it known as in the UK?</p>
+  
+  
+    <ion-item>
+      <ion-label>Coffee </ion-label>
+      <ion-checkbox [(ngModel)]="Funi1"></ion-checkbox>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Tea</ion-label>
+      <ion-checkbox [(ngModel)]="Funi2"></ion-checkbox>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label> Coldrink</ion-label>
+      <ion-checkbox [(ngModel)]="Funi3"></ion-checkbox>
+    </ion-item>
+  
+    <p> 4.Which nation defeated England in the 2018 Women's Rugby Union World Cup Final to win the trophy for a fifth time?</p>
+  
+    <ion-item>
+      <ion-label>New Zealand</ion-label>
+      <ion-checkbox [(ngModel)]="code1"></ion-checkbox>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>South Africa</ion-label>
+      <ion-checkbox [(ngModel)]="code2"></ion-checkbox>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>America</ion-label>
+      <ion-checkbox [(ngModel)]="code3"></ion-checkbox>
+    </ion-item>
+  
+  
+    <p> 5.What is the French phrase for 'If it pleases you'?</p>
+    
+    <ion-item>
+      <ion-label>S'il Vous Plait</ion-label>
+      <ion-checkbox [(ngModel)]="food1"></ion-checkbox>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Tavez</ion-label>
+      <ion-checkbox [(ngModel)]="food2"></ion-checkbox>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Rodriguez</ion-label>
+      <ion-checkbox [(ngModel)]="food3"></ion-checkbox>
+    </ion-item>
+  
+    <H1>{{score}}</H1>
+   
+    <h1 id="h101">General Knowledge Quizz </h1>
+  <ion-list>
+    <ion-item>
+      <ion-label>According to folklore, what kind of animal is 'Black Shuck' which is said to roam East Anglia?</ion-label>
+      <ion-select [(ngModel)]="Dog">
+        <ion-option   value="Dog">Dog</ion-option>
+        <ion-option value="n64">Bull Dog</ion-option>
+        <ion-option value="ps">Cheater</ion-option>      
+      </ion-select>   
+    </ion-item>
+  </ion-list>
+  
+  <ion-list>
+    <ion-item>
+      <ion-label>According to folklore, what kind of animal is 'Black Shuck' which is said to roam East Anglia?</ion-label>
+      <ion-select [(ngModel)]="Glorious">
+        <ion-option value="Glorious">Glorious</ion-option>
+        <ion-option value="Goodwood">Goodwood</ion-option>
+        <ion-option value="Aasp">Aasp</ion-option>      
+      </ion-select>   
+    </ion-item>
+  </ion-list>
+  
+  
+  <ion-list>
+    <ion-item>
+      <ion-label>How old was Neil Armstrong when he first walked on the moon?</ion-label>
+      <ion-select [(ngModel)]="Tweety">
+        <ion-option value="Tweety">Tweety</ion-option>
+        <ion-option value="Forty">Forty</ion-option>
+        <ion-option value="Fifty">Fifty</ion-option>      
+      </ion-select>   
+    </ion-item>
+  </ion-list>
+  
+  <ion-list>
+    <ion-item>
+      <ion-label>What is the capital city of South Africa?</ion-label>
+      <ion-select [(ngModel)]="Pretoria">
+        <ion-option value="Pretoria">Pretoria</ion-option>
+        <ion-option value="Harare">Harare</ion-option>
+        <ion-option value="Malawi">spanini</ion-option>      
+      </ion-select>   
+    </ion-item>
+  </ion-list>
+  
+  <ion-list>
+    <ion-item>
+      <ion-label>What is the name of the official currency of South Africa</ion-label>
+      <ion-select [(ngModel)]="SouthAfricaRand">
+        <ion-option value="SouthAfricaRand">SouthAfricaRand</ion-option>
+        <ion-option value="Naija">Dollar</ion-option>
+        <ion-option value="Pula">euro</ion-option>      
+      </ion-select>   
+    </ion-item>
+  </ion-list>
+  
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+  
+  
+  <button ion-button (click) ="submit()">submit</button>
+  
+  
+  
+  
+  
+  
+  
+  </ion-content>
+  
+  
+  
+
+
+
+  
+    
+    
+
