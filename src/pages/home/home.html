@@ -1,25 +1,24 @@
 <ion-header>
-    <ion-navbar>
+    <ion-navbar color="secondary">
       <ion-title>
-        Quiz Game
+        Quizz   App
       </ion-title>
     </ion-navbar>
   </ion-header>
   
   <ion-content padding>
-  
     
   
-    <h1>THIS IS MY QUIZZ</h1>
+    <h1 style="text-align: center">THIS IS MY QUIZZ APP</h1>
   
     <ion-item>
-      <ion-label floating>Game Number</ion-label>
+      <ion-label floating>Enter Game Number </ion-label>
       <ion-input type="number"></ion-input>
     </ion-item>
   
    
   
-    <h1 id="h101">Category</h1>
+    <h1 id="h101">Soccer Quizz</h1>
   
     <p> 1. Which British TV presenter was known for his "Cheap as chips" catchphrase?</p>
     
@@ -107,17 +106,20 @@
       <ion-label>Rodriguez</ion-label>
       <ion-checkbox [(ngModel)]="food3"></ion-checkbox>
     </ion-item>
-  
-    <H1>{{score}}</H1>
-   
-    <h1 id="h101">General Knowledge Quizz </h1>
+
+  <h4>
+    {{score}}
+
+   </h4>
+    <h3 id="h101">General Knowledge Quizz </h3>
+    
   <ion-list>
     <ion-item>
-      <ion-label>According to folklore, what kind of animal is 'Black Shuck' which is said to roam East Anglia?</ion-label>
-      <ion-select [(ngModel)]="Dog">
+      <ion-label>According to folklore, what kind of animal is 'Black Shuka' which is said to roam East Anglia?</ion-label>
+      <ion-select [(ngModel)]="Animal">
         <ion-option   value="Dog">Dog</ion-option>
-        <ion-option value="n64">Bull Dog</ion-option>
-        <ion-option value="ps">Cheater</ion-option>      
+        <ion-option value="BullDog">Bull Dog</ion-option>
+        <ion-option value="Cheater">Cheater</ion-option>      
       </ion-select>   
     </ion-item>
   </ion-list>
@@ -125,7 +127,7 @@
   <ion-list>
     <ion-item>
       <ion-label>According to folklore, what kind of animal is 'Black Shuck' which is said to roam East Anglia?</ion-label>
-      <ion-select [(ngModel)]="Glorious">
+      <ion-select [(ngModel)]="Walker">
         <ion-option value="Glorious">Glorious</ion-option>
         <ion-option value="Goodwood">Goodwood</ion-option>
         <ion-option value="Aasp">Aasp</ion-option>      
@@ -137,7 +139,7 @@
   <ion-list>
     <ion-item>
       <ion-label>How old was Neil Armstrong when he first walked on the moon?</ion-label>
-      <ion-select [(ngModel)]="Tweety">
+      <ion-select [(ngModel)]="Mandoza">
         <ion-option value="Tweety">Tweety</ion-option>
         <ion-option value="Forty">Forty</ion-option>
         <ion-option value="Fifty">Fifty</ion-option>      
@@ -148,7 +150,7 @@
   <ion-list>
     <ion-item>
       <ion-label>What is the capital city of South Africa?</ion-label>
-      <ion-select [(ngModel)]="Pretoria">
+      <ion-select [(ngModel)]="Limpopo">
         <ion-option value="Pretoria">Pretoria</ion-option>
         <ion-option value="Harare">Harare</ion-option>
         <ion-option value="Malawi">spanini</ion-option>      
@@ -159,8 +161,8 @@
   <ion-list>
     <ion-item>
       <ion-label>What is the name of the official currency of South Africa</ion-label>
-      <ion-select [(ngModel)]="SouthAfricaRand">
-        <ion-option value="SouthAfricaRand">SouthAfricaRand</ion-option>
+      <ion-select [(ngModel)]="Humbu">
+        <ion-option value="Rand">Rand</ion-option>
         <ion-option value="Naija">Dollar</ion-option>
         <ion-option value="Pula">euro</ion-option>      
       </ion-select>   
@@ -168,12 +170,72 @@
   </ion-list>
   
 
+   <h2 id="h101">Quizz For Countries</h2>
+   
+   <ion-list>
+    <ion-item>
+      <ion-label>Which is the only American state to begin with the letter 'p'? </ion-label>
+      <ion-select [(ngModel)]="Sosha">
+        <ion-option   value="Pennsylvania">Pennsylvania</ion-option>
+        <ion-option value="Pakinstan">Pakinstan</ion-option>
+        <ion-option value="Peru">Peru</ion-option>      
+      </ion-select>   
+    </ion-item>
+  </ion-list>
   
+  <ion-list>
+    <ion-item>
+      <ion-label>Name the world's biggest island.</ion-label>
+      <ion-select [(ngModel)]="External">
+        <ion-option value="Greenland">Greenland</ion-option>
+        <ion-option value="India">India</ion-option>
+        <ion-option value="Madagascar">Madagascar</ion-option>      
+      </ion-select>   
+    </ion-item>
+  </ion-list>
+  
+  
+  <ion-list>
+    <ion-item>
+      <ion-label>What is the world's longest river?</ion-label>
+      <ion-select [(ngModel)]="Nzenza">
+        <ion-option value="Tugela">Tugela</ion-option>
+        <ion-option value="Harare">Harae</ion-option>
+        <ion-option value="Mideast">Mideast</ion-option>      
+      </ion-select>   
+    </ion-item>
+  </ion-list>
+  
+  <ion-list>
+    <ion-item>
+      <ion-label>Name the world's largest ocean.</ion-label>
+      <ion-select [(ngModel)]="Major">
+        <ion-option value="Pacific">Pacific</ion-option>
+        <ion-option value="Ocean">Ocean</ion-option>
+        <ion-option value="Malawi">Malawi</ion-option>      
+      </ion-select>   
+    </ion-item>
+  </ion-list>
+  
+  <ion-list>
+    <ion-item>
+      <ion-label>What is the capital city of Spain? .</ion-label>
+      <ion-select [(ngModel)]="Diego">
+        <ion-option value="Madrid">Madrid</ion-option>
+        <ion-option value="Barcelona">Barcelona</ion-option>
+        <ion-option value="London">London</ion-option>      
+      </ion-select>   
+    </ion-item>
+  </ion-list>
+
+
+
+  <div  id="button" style="text-align:center">
   
   <button ion-button (click) ="submit()">submit</button>
   
   
-  
+</div>
   
   
   
